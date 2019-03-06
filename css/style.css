@@ -1,3 +1,128 @@
+/* Template */
+* {
+  padding: 0px;
+  margin: 0px; }
 
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.row:after,
+.group:after {
+  clear: both; }
+
+.row,
+.group {
+  zoom: 1; }
+
+/* Template End */
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center; }
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-edu {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.grid-edu-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 20px; }
+
+html {
+  font-size: 1em; }
+
+.hide-small {
+  display: none; }
+
+body {
+  font-family: 'PT Sans', Helvetica, sans-serif; }
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 80px; } }
+
+img {
+  width: 8%; }
+
+.stylebar {
+  width: 100px;
+  height: 5px;
+  background-color: #e2d6c9;
+  margin-bottom: 10px; }
+
+header {
+  background-color: #405c71;
+  color: #FFF;
+  margin-bottom: 10px; }
+  header .container {
+    margin: 0 20px; }
+  header h1 {
+    margin-top: 10px;
+    font-weight: normal; }
+  header nav {
+    padding: 5px 5px; }
+  header a {
+    background-color: #365267;
+    height: 100%;
+    border-bottom: none;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 2px solid #405c71;
+    border-bottom: none; }
+  header a:hover {
+    background-color: #FFF;
+    color: #405c71; }
+  @media only screen and (min-width: 768px) {
+    header .grid-nav {
+      grid-template-columns: repeat(4, 1fr); }
+    header .hide-small {
+      display: inline; } }
+
+.about {
+  padding: 10px; }
+  .about .content {
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2); }
+  .about p {
+    margin-bottom: 5px;
+    line-height: 1.3; }
+
+.education {
+  padding: 10px;
+  background-color: #ece9e9; }
+  .education .edu-img-container {
+    border-radius: 45% 45%;
+    background: #FFF;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-height: 100%; }
+    .education .edu-img-container img {
+      width: 100%;
+      display: block;
+      padding: 10px; }
+  @media only screen and (min-width: 768px) {
+    .education .grid-edu-item {
+      grid-template-columns: 1fr 2fr 1fr 2fr; } }
 
 /*# sourceMappingURL=style.css.map */
