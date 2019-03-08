@@ -22,6 +22,7 @@ body{
 }
 
 .wrapper {
+  margin: 10px;
   @include mobile-L {
     margin: 0 20px;
   }
@@ -103,6 +104,7 @@ header {
       flex-direction: column;
       margin-bottom: 20px;
       line-height: 1.4em;
+        align-items: center;
       img {
         width: 50px;
         height: 50px;
@@ -138,7 +140,7 @@ footer {
     }
   }
 
-  @include desktop-S {
+  @include mobile-L {
     position: fixed;
     bottom:0;
     width: 100%;
