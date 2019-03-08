@@ -9,13 +9,3 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-edu {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.grid-edu-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding-bottom: 20px;
-}

@@ -40,15 +40,6 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
-.grid-edu {
-  display: grid;
-  grid-template-columns: 1fr; }
-
-.grid-edu-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding-bottom: 20px; }
-
 html {
   font-size: 1em; }
 
@@ -60,10 +51,10 @@ body {
 
 @media only screen and (min-width: 768px) {
   .wrapper {
-    margin: 0 80px; } }
-
-img {
-  width: 8%; }
+    margin: 0 20px; } }
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    margin: 0 120px; } }
 
 .stylebar {
   width: 100px;
@@ -109,20 +100,43 @@ header {
     line-height: 1.3; }
 
 .education {
-  padding: 10px;
-  background-color: #ece9e9; }
-  .education .edu-img-container {
-    border-radius: 45% 45%;
-    background: #FFF;
-    margin-right: 15px;
-    margin-bottom: 20px;
-    max-height: 100%; }
-    .education .edu-img-container img {
-      width: 100%;
-      display: block;
-      padding: 10px; }
+  padding: 10px; }
+  .education .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .education .flex-container .flex-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      line-height: 1.4em; }
+      .education .flex-container .flex-item img {
+        width: 50px;
+        height: 50px; }
   @media only screen and (min-width: 768px) {
-    .education .grid-edu-item {
-      grid-template-columns: 1fr 2fr 1fr 2fr; } }
+    .education .flex-container {
+      flex-direction: row;
+      font-size: 1.1em; } }
+
+footer {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: flex-end;
+  height: 6vh; }
+  footer p {
+    width: 30%; }
+  footer .contact {
+    display: flex;
+    flex-basis: 2;
+    justify-content: space-between; }
+    footer .contact img {
+      width: 30px;
+      margin-right: 10px; }
+  @media only screen and (min-width: 1024px) {
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
