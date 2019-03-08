@@ -83,7 +83,8 @@ header {
     color: #FFF;
     padding: 10px 20px;
     border: 2px solid #405c71;
-    border-bottom: none; }
+    border-bottom: none;
+    transition: 0.3s; }
   header a:hover {
     background-color: #FFF;
     color: #405c71; }
@@ -113,7 +114,7 @@ header {
       margin-bottom: 20px;
       line-height: 1.4em;
       align-items: center; }
-      .education .flex-container .flex-item img {
+      .education .flex-container .flex-item svg {
         width: 50px;
         height: 50px; }
   @media only screen and (min-width: 768px) {
@@ -128,14 +129,18 @@ footer {
   justify-content: flex-end;
   height: 6vh; }
   footer p {
-    width: 30%; }
+    margin: 10px; }
   footer .contact {
     display: flex;
     flex-basis: 2;
-    justify-content: space-between; }
-    footer .contact img {
+    justify-content: space-between;
+    fill: #000000;
+    transition: 0.5ms; }
+    footer .contact svg {
       width: 30px;
       margin-right: 10px; }
+    footer .contact svg:hover {
+      fill: #FFF; }
   @media only screen and (min-width: 768px) {
     footer {
       position: fixed;
