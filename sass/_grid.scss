@@ -1,11 +1,11 @@
 .grid-header {
   display: grid;
   grid-template-columns: 1fr;
-  text-align: center;
 }
 
 .grid-nav {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(2, 1fr);
 }
 
