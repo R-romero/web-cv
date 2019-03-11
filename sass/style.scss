@@ -33,11 +33,14 @@ html{
 body{
   font-family: 'PT Sans', Helvetica, sans-serif;
   background: #f1f1f1;
+  position: relative;
+  min-height: 100vh;
 }
 
 .wrapper {
   margin: 0 10px;
   padding: 10px;
+  padding-bottom: 2.5rem;
   @include mobile-L {
     margin: 0 5%;
   }
@@ -140,7 +143,7 @@ header {
   .card-container {
     display: flex;
     flex-direction: column;
-    @include mobile-L {
+    @include desktop-S {
       flex-direction: row;
     }
   }
@@ -331,12 +334,15 @@ header {
   }
 }
 
-footer {
+.footer {
   display: flex;
   background-color: rgba(0,0,0, 0.2);
   align-items: center;
   justify-content: flex-end;
-  height: 6vh;
+  height: 2.5rem;
+  position: absolute;
+  bottom:0;
+  width: 100%;
   p{
     margin: 10px;
   }
@@ -352,13 +358,6 @@ footer {
         fill: #FFF;
       }
     }
-  }
-
-
-  @include mobile-L {
-    position: fixed;
-    bottom:0;
-    width: 100%;
   }
 }
 

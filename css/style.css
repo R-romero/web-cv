@@ -54,11 +54,14 @@ html {
 
 body {
   font-family: 'PT Sans', Helvetica, sans-serif;
-  background: #f1f1f1; }
+  background: #f1f1f1;
+  position: relative;
+  min-height: 100vh; }
 
 .wrapper {
   margin: 0 10px;
-  padding: 10px; }
+  padding: 10px;
+  padding-bottom: 2.5rem; }
   @media only screen and (min-width: 768px) {
     .wrapper {
       margin: 0 5%; } }
@@ -135,7 +138,7 @@ header {
 .portfolio .card-container {
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .portfolio .card-container {
       flex-direction: row; } }
 .portfolio .card-content {
@@ -279,27 +282,25 @@ header {
   .portfolio .hide-big {
     display: none; } }
 
-footer {
+.footer {
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
   align-items: center;
   justify-content: flex-end;
-  height: 6vh; }
-  footer p {
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .footer p {
     margin: 10px; }
-  footer .container-contact {
+  .footer .container-contact {
     display: flex;
     flex-basis: 2;
     justify-content: space-between; }
-    footer .container-contact svg {
+    .footer .container-contact svg {
       width: 25px;
       margin-right: 10px; }
-      footer .container-contact svg:hover {
+      .footer .container-contact svg:hover {
         fill: #FFF; }
-  @media only screen and (min-width: 768px) {
-    footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
