@@ -137,7 +137,8 @@ header {
 
 .portfolio .card-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   @media only screen and (min-width: 1024px) {
     .portfolio .card-container {
       flex-direction: row; } }
@@ -147,6 +148,7 @@ header {
   margin: 1rem 1rem;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
+  max-width: 446px;
   background: #fff;
   line-height: 1.4;
   font-family: sans-serif;
@@ -194,13 +196,15 @@ header {
     .portfolio .card-content .info .authors::before {
       margin-right: 10px;
       content: ""; }
-    .portfolio .card-content .info .tags ul::before {
-      content: "";
-      margin-right: 15px; }
-    .portfolio .card-content .info .tags li {
-      margin-right: 2px; }
-      .portfolio .card-content .info .tags li:first-child {
-        margin-left: -4px; }
+    .portfolio .card-content .info .tags {
+      margin-top: 1rem; }
+      .portfolio .card-content .info .tags ul::before {
+        content: "";
+        margin-right: 15px; }
+      .portfolio .card-content .info .tags li {
+        margin-right: 2px; }
+        .portfolio .card-content .info .tags li:first-child {
+          margin-left: -4px; }
   .portfolio .card-content .description {
     padding: 1rem;
     background: #fff;
@@ -278,9 +282,6 @@ header {
           transform: skew(3deg); }
         .portfolio .card-content.alt .details {
           padding-left: 25px; } }
-@media only screen and (min-width: 768px) {
-  .portfolio .hide-big {
-    display: none; } }
 
 .footer {
   display: flex;

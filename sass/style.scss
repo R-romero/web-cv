@@ -143,6 +143,7 @@ header {
   .card-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include desktop-S {
       flex-direction: row;
     }
@@ -154,6 +155,7 @@ header {
     margin: 1rem 1rem;
     box-shadow: 0 3px 7px -1px rgba(#000, .1);
     margin-bottom: 1.6%;
+    max-width: 446px;
     background: $color_white;
     line-height: 1.4;
     font-family: sans-serif;
@@ -210,6 +212,7 @@ header {
         content: "";
       }
       .tags{
+        margin-top: 1rem;
         ul::before{
           content: "";
           margin-right: 15px;
@@ -326,12 +329,6 @@ header {
     }
   }
 
-  @include mobile-L {
-    .hide-big {
-      display: none;
-    }
-
-  }
 }
 
 .footer {
